@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panther - Wakanda Forever</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="btnModeClair">Activer mode clair </button>
+
+<!-- NAVIGATION -->
+
+<div class="burger-container">
+    <button id="burgerBtn" class="burger-icon">
+        <span></span><span></span><span></span>
+    </button>
+</div>
+
+<nav id="sideMenu" class="side-nav">
+    <a href="#intro">Introduction</a>
+    <a href="#wakanda">Wakanda</a>
+    <a href="#personnages">Personnages</a>
+    <a href="#Histoire">Histoire</a>
+</nav>
+
+<!--Titre-->
+<section class="Titre">
+    <div class="titre">
+        <div class="img1">
+            <img src="giphy étoile.gif" alt="étoile">
+        </div>
+        <div class="TITRE">
+            <h1>BLACK PANTHER</h1>
+        </div>
+
+        <div class="img2">
+            <img src="giphy étoile.gif" alt="étoile">
+        </div>
+    </div>
+</section>
+
+<!--INTRODUCTION-->
+<section id="intro" class="section1">
+    <h2>Introduction</h2>
+    <p>Le Wakanda, nation secrète d'Afrique, abrite une civilisation brillante. Son roi, T'Challa, porte le manteau du
+        Black Panther - le protecteur du royaume. Héritier d'une longue lignée de souverains guerriers, il défend non
+        seulement son peuple, mais aussi la paix dans le monde.</p>
+</section>
+
+<!--Personnage-->
+
+<section id="personnages" class="section3">
+    <h2>Les Héros du Wakanda</h2>
+    
+    <div class="bouton-tabs">
+        <button class="bouton-tabs visible" onclick="openTab(event, 'tchalla-tab')">T'Challa</button>
+        <button class="bouton-tabs" onclick="openTab(event, 'shuri-tab')">Shuri</button>
+        <button class="bouton-tabs" onclick="openTab(event, 'ramonda-tab')">Ramonda</button>
+    </div>
+
+    <div id="tchalla-tab" class="tab-content visible">
+        <div class="card-single">
+            <img src="T'Challa.jpeg" alt="T'Challa">
+            <p>T'CHALLA / BLACK PANTHER. Roi du Wakanda — Protecteur du royaume.</p>
+        </div>
+    </div>
+
+    <div id="shuri-tab" class="tab-content">
+        <div class="card-single">
+            <img src="Shuri.jpeg" alt="Shuri">
+            <p>SHURI Princesse du Wakanda — Génie scientifique.</p>
+        </div>
+    </div>
+
+    <div id="ramonda-tab" class="tab-content">
+        <div class="card-single">
+            <img src="r.jpeg" alt="Ramona">
+            <p>QUEEN RAMONDA Reine mère — Conseillère du trône.</p>
+        </div>
+    </div>
+</section>
+
+<!--WAKANDA SECTION-->
+<section id="wakanda" class="section2">
+    <h2>L'UNIVERS DU WAKANDA — Le joyau caché de l'Afrique</h2>
+    <p>Caché derrière des montagnes impénétrables, le Wakanda est un royaume unique, fondé sur l'équilibre entre la
+        nature, la science et la spiritualité.
+        Son secret ? Le Vibranium, un métal extraterrestre tombé sur Terre il y a des siècles, qui alimente toute la
+        technologie du pays : transports, médecine, armures et énergie.
+        Grâce à ce métal, le Wakanda est devenu la nation la plus avancée du monde, tout en restant fidèle à ses
+        traditions tribales, dirigées par des conseils de sages et de chefs.
+    </p>
+    <img src="Wakanda.jpeg" alt="Panther">
+</section>
+
+<!-- HISTOIRE & MYTHOLOGIE -->
+<section id="Histoire" class="section4">
+    <h2>Histoire et mythologie du premier Black Panther</h2>
+    <p>Tout commença il y a des siècles, quand un météore de Vibranium s'écrasa sur les terres africaines. Le chef
+        Bashenga fut le premier à recevoir la bénédiction de la déesse Panthère, Bast, devenant ainsi le premier Black
+        Panther.
+        Depuis, chaque génération a vu naître un nouveau gardien, choisi par les dieux pour protéger le peuple.
+        Les cérémonies sacrées, les combats rituels, et les voyages au Plan ancestral (où reposent les anciens rois)
+        font partie intégrante de la culture wakandaise.
+    </p>
+</section>
+
+<!-- TECHNOLOGIE DU VIBRANIUM -->
+<section class="section5">
+    <h2>Technologie du Vibranium</h2>
+    <p> Le Vibranium est l'élément le plus précieux du Wakanda. Il absorbe, stocke et redistribue l'énergie.
+        Grâce à lui, le royaume a développé des trains à sustentation magnétique, des armes énergétiques, et une
+        médecine capable de régénérer les tissus humains.
+        La combinaison de Black Panther contient des micro-nanorobots qui se déploient en une fraction de seconde,
+        rendant T'Challa aussi rapide qu'intouchable.
+    </p>
+    <img src="vibranium.jpeg" alt="vibranium">
+
+    <div class="three-buttons">
+        <div class="card small"></div>
+        <div class="card small"></div>
+        <div class="card small"></div>
+    </div>
+</section>
+
+<div><a href="https://www.disney.fr/films/marvel-studios-black-panther" target="_blank">site officiel</a> </div>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+     font-family: "Trebuchet MS", sans-serif;
+     background-color:#0c0c0f;
+     color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.titre img {
+    width: 200px;
+}
+.titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.TITRE{
+    align-content: center;
+}
+
+
+p {
+    font-size: 20px;
+    color: rgb(165, 124, 138);
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background: #070211;
+    color: white;
+}
+body.mode-clair {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background: #d8d5ddf6;
+    color: white;
+} 
+/*nav barre de navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background:#200240;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.nav-right {
+    font-weight: bold;
+}
+
+.division1 {
+    width: 40%;
+    height: 300px;
+    border: 2px solid black;
+}
+
+
+/*sections*/
+.section1{
+    padding: 60px 30px;
+    text-align: left;
+    border-top: 1px solid #333;
+}
+
+.section1 p{
+    text-align: justify;
+}
+
+.section2 {
+    padding: 60px 30px;
+    text-align: right;
+    border-top: 1px solid #333;
+}
+
+.section2 img{
+    margin-top: 20px;
+    width: 70%;
+    margin-right:15%;
+
+}
+
+.section2 p{
+    text-align: justify;
+}
+
+.section3 {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-top: 1px solid #333;
+}
+
+.section3 p{
+    text-align: center;
+    
+}
+
+.section5 img{
+    margin-top: 20px;
+    width: 70%;
+    margin-left:15%;
+    
+
+}
+
+
+.tchalla img{
+    width:220px;
+    margin-left: 50px;
+}
+
+.shuri img{
+    width:220px;
+}   
+
+.ramona img{
+    width:300px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.section4 {
+    padding: 60px 30px;
+    text-align: right;
+    border-top: 1px solid #333;
+}
+
+.section5 {
+    padding: 60px 30px;
+    text-align: left;
+    border-top: 1px solid #333;
+}
+
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/*PERSONNAGES*/
+
+.tchallaimg {
+    width: 20%;
+
+}
+
+.shuri {
+    width: 40%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p:hover {
+    color: rgb(224, 163, 9);
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+/*Mode clair*/
+
+body.mode-clair a {
+    color: #e7e1ed;
+    font-weight: bold;
+}
+
+body.mode-clair nav a {
+    color: rgb(227, 216, 228);
+}
+
+body.mode-clair {
+    background-color: white;
+    color: rgb(243, 231, 231); 
+}
+
+body.mode-clair {
+    background-color: #f4f4f4; 
+    background-image: none;  
+    color: #1a1a1a;          
+}
+
+body.mode-clair h1, 
+body.mode-clair h2, 
+body.mode-clair p {
+    color: #1a1a1a ;
+}
+
+body.mode-clair section {
+    border-top: 1px solid #760a54;
+}
+
+p.mode-clair:hover {
+    color: rgb(110, 7, 55);
+}
+
+#btnModeclair {
+    padding: 10px 10px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #200240;
+    color:white;
+    border: none;
+    border-radius: 2px;
+}
+
+/*BURGER MENU*/
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    background-color: #490256;
+    overflow-x: hidden;
+    transition: 0.5s; 
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Largeur quand le menu est ouvert*/
+
+.side-nav.active {
+    width: 250px; 
+}
+
+.burger-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon span {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.bouton-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.bouton-tabs {
+    background-color: #200240;
+    color: white;
+    border: 2px solid #a57c8a;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bouton-tabs.visible {
+    background-color: #540626;
+    color: black;
+}
+
+.tab-content {
+    display: none; 
+    animation: fadeIn 0.8s; 
+}
+
+.tab-content.visible {
+    display: block;
+}
+
+.card-single {
+    text-align: center;
+}
+
+.card-single img {
+    width: 300px;
+    border-radius: 10px;
+}
